@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Estrangeiro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">    
+    <style>
+        body {
+            font-family: 'Comfortaa';
+        }
+        input#texto {
+            border-radius: 10px;
+            height: 20px;
+        }
+
+        input#botao {
+            border-radius: 10px;
+            height: 25px;
+            font-family: 'Comfortaa';
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" id="texto" placeholder="Digite o país">
+    <input type="button" id="botao" value="Confirmar" onclick="confirm()">
+    <div id="nac"></div>
+
+    <script>
+       
+        function confirm() {
+            var nacional = document.querySelector('input#texto').value 
+            var res = document.querySelector('div#nac')
+
+            if (nacional.toLowerCase() === 'brasil') {
+                res.innerHTML = `Nascido no Brasil, Brasileiro`
+            }
+            else {
+                res.innerHTML = `Nascido em ${nacional}, Estrangeiro`
+            }
+         }
+
+    </script>
+</body>
+</html>

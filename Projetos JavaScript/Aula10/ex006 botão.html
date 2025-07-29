@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+        <!-- Link para a fonte Confortaa no Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">    
+    <style>
+
+        div#area{
+            background: lightgreen;
+            color: white;
+            width: 200px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px; /* Ajuste para centralizar verticalmente */
+            display: inline-block;/* faz com que um elemento se comporte como um bloco, mas ainda se alinhe na mesma linha de outros elementos ao seu redor */
+            padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+            border-radius: 15px; /* Canto arredondado */
+            font-family: 'Comfortaa', sans-serif; /* Aplica a fonte Conforta */
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* Centraliza considerando o tamanho da div */
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var area = document.getElementById("area")
+        area.addEventListener ("click", clicar)
+        area.addEventListener ("mouseenter", entrar)
+        area.addEventListener ("mouseout", sair)
+
+        function clicar() {
+            area.innerText = "Click!"
+            area.style.background = "red"
+        }
+
+        function entrar() {
+            area.innerText = "Entrou!"
+            area.style.background = "#0cff2c"
+        }
+
+        function sair() {
+            area.innerText = "Saiu!"
+            area.style.background = "lightgreen"
+        }
+
+    </script>
+</body>
+</html>

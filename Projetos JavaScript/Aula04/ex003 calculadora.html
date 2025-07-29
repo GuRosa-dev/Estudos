@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(154, 77, 255);
+            color: white; /* Comentário em CSS */
+            font: 15pt Arial;
+        }
+        h1 {
+            color: rgb(46, 255, 57);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1> <!-- Título -->
+    <script>
+        var n1 = Number(prompt ("Digite um número: ")) //number é usado para converter o resultado de string para number
+        var n2 = Number(prompt ("Digite outro número: ")) 
+        var soma = n1 + n2
+        //alert ("A soma desses dois números é: " + soma)//usando concatenação
+        alert (`A soma desses dois números é: ${soma}`)//usando string template e place holder
+    </script>
+</body>
+</html>
