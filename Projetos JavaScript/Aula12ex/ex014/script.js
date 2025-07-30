@@ -3,9 +3,10 @@ function carregar() {
     var img = document.querySelector('div#img')
     var data = new Date()
     var hora = data.getHours()
-    //var hora = 20
+    //var hora = 
     var minutos = data.getMinutes()
     var segundos = data.getSeconds()
+    setInterval(carregar, 1000);
  // Ajusta as horas e minutos para sempre exibir dois dígitos
  //padStart verifica se a string tem dois digitos, senão ela completa com o '0'
  var horaFormatada = String(hora).padStart(2, '0');
