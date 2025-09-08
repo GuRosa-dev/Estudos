@@ -3,18 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package polimorfismo;
-
-/**
- *
- * @author Gustavo
- */
 public class Polimorfismo {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Animal a = new Animal(); classe abstrata
+        Mamífero mami = new Mamífero();
+        Réptil rept = new Réptil();
+        Peixe peix = new Peixe();
+        Ave ave = new Ave();
+        Canguru cang = new Canguru();
+        Cachorro cach = new Cachorro();
+        Cobra cobr = new Cobra();
+        Tartaruga tart = new Tartaruga();
+        Goldfish gold = new Goldfish();
+        Arara arar = new Arara();
+        
+        cang.locomover();
+        cach.locomover();
+        cang.emitirSom();
+        cach.emitirSom();
+        
     }
     
 }
