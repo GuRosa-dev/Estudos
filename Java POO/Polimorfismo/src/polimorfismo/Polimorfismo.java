@@ -16,12 +16,6 @@ public class Polimorfismo {
         Tartaruga tart = new Tartaruga();
         Goldfish gold = new Goldfish();
         Arara arar = new Arara();
-        
-        cang.locomover();
-        cach.locomover();
-        cang.emitirSom();
-        cach.emitirSom();
-        
     }
     
 }
